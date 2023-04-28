@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>palindromo</title>
+	<script type="text/javascript" src="js/palindromo.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		let aux2, aux=0,j,aux1=0;
+
+		while((aux<2)||(aux>99)||(aux1<3)){
+			aux2=prompt('Ingrese algo', ' ');
+			aux=aux2.length;
+			for(let l=0; l<aux; l++){
+				if(aux2.charAt(l)=='X'){
+					aux1++;
+				}
+			}
+		};
+
+		document.write(EsPalindromo(aux2));
+	</script>
+</body>
+</html>
